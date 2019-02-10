@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Gallery</title>
+    <script src = jquery-3.3.1.js></script>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/bootstrap.js"></script>
+    <script src = ../js/scripts.js></script>
+
+
+</head>
+<body>
+<h1 id="titleSearch">Image Search</h1>
+
+<div id="container">
+<div id="textBoxDiv">
+<input type="text" id="textBox" name="textBox" placeholder="Search Images" class="form-control"/>
+<ul id="result" class="list-group" multiple="true"></ul>
+</div>
+
+<div id="buttonsDiv">
+<form action="../js/scripts.js" method="get">
+    <input type="radio" name="tagMode" id="all" value="all" checked>All - AND<br>
+    <input type="radio" name="tagMode" id="any" value="any" >Any - OR
+</form>
+
+    <button id="btnSaveResults" disabled>Save Search Results</button>
+
+</div>
+</div>
+<div id="flickr"></div>
+
+
+</body>
+</html>
