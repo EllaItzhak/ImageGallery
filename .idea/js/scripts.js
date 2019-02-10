@@ -106,7 +106,7 @@ function getImagesFromFlickr(tags) {
         if(imagesArrJson == null){
             let tagMode = $("input[name=tagMode]:checked").val();
 
-            let flickrApiUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=07a33fa4f7f26e335594c46075813381&" +
+            let flickrApiUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=cb335fe21dc164e60da4c6231ca62fbc&" +
                 "tags=" + tags + "&tag_mode=" + tagMode + "&sort=relevance&format=json&nojsoncallback=1";
 
             $("#flickr").empty();
